@@ -8,8 +8,10 @@ ReactJs
 ```
 npx create-react-app my-app
 ```
-### React JS Rules 
+### React JS Hook Rules 
 ```
+https://reactjs.org/docs/hooks-rules.html
+
 Do not modify the state directly or Manualy
 
 const [count,setCount] = useState(0)
