@@ -8,3 +8,17 @@ ReactJs
 ```
 npx create-react-app my-app
 ```
+### React JS Rules 
+```
+Do not modify the state directly or Manualy
+
+const [count,setCount] = useState(0)
+        //count = 90 Do not update state manually
+        useEffect(()=>{
+             setCount(90) //use the setCount
+        },[]) //Empty array dependencies to prevent continued update of useEffect
+   
+        useEffect(()=>{
+             setCount(90) //use the setCount
+        }) //Continue update everytime changes detected
+```
