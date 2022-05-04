@@ -19,9 +19,9 @@ npm install eslint-plugin-react-hooks --save-dev
 ### React JS Hook Rules 
 ```
 https://reactjs.org/docs/hooks-rules.html
-
-Do not modify the state directly or Manualy
-
+```
+1. Do not modify the state directly or Manualy
+```
 const [count,setCount] = useState(0)
         //count = 90 Do not update state manually
         useEffect(()=>{
@@ -31,4 +31,20 @@ const [count,setCount] = useState(0)
         useEffect(()=>{
              setCount(90) //use the setCount
         }) //Continue update everytime changes detected
+```
+2. Call Hook always on the top level of component/component function
+```
+useState('Mary')           // 1. Read the name state variable (argument is ignored)
+// useEffect(persistForm)  // 🔴 This Hook was skipped!
+useState('Poppins')        // 🔴 2 (but was 3). Fail to read the surname state variable
+useEffect(updateTitle)     // 🔴 3 (but was 4). Fail to replace the effect
+```
+3. Put condition inside hook
+```
+useEffect(function persistForm() {
+    // 👍 We're not breaking the first rule anymore
+    if (name !== '') {
+      localStorage.setItem('formData', name);
+    }
+  });
 ```
