@@ -27,8 +27,11 @@ const [count,setCount] = useState(0)
         useEffect(()=>{
              //count = 40 Do not do this!
              setCount(90) //use the setCount //Do this
-        },[]) //Empty array dependencies to prevent continued update of useEffect
-   
+        },[]) //Empty array dependencies to prevent continued update of useEffect if component change
+        useEffect(()=>{
+             //count = 40 Do not do this!
+             setCount(90) //use the setCount //Do this
+        },[count]) //useEffect update if "count" variable change
         useEffect(()=>{
              //count = 40 Do not do this!
              setCount(90) //use the setCount //Do this
