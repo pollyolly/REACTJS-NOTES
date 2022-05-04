@@ -25,11 +25,13 @@ https://reactjs.org/docs/hooks-rules.html
 const [count,setCount] = useState(0)
         //count = 90 Do not update state manually
         useEffect(()=>{
-             setCount(90) //use the setCount
+             //count = 40 Do not do this!
+             setCount(90) //use the setCount //Do this
         },[]) //Empty array dependencies to prevent continued update of useEffect
    
         useEffect(()=>{
-             setCount(90) //use the setCount
+             //count = 40 Do not do this!
+             setCount(90) //use the setCount //Do this
         }) //Continue update everytime changes detected
 ```
 2. Call Hook always on the top level of component/component function
