@@ -28,6 +28,7 @@ const [count,setCount] = useState(0)
              //count = 40 Do not do this! //Do not update manually
              setCount(90) //use the setCount //Do this
         },[]) //Empty array dependencies to prevent continued update of useEffect if component change
+                //Run only at the start of component
         useEffect(()=>{
         },[count]) //useEffect update if "count" variable change //Infinite loop
         useEffect(()=>{
