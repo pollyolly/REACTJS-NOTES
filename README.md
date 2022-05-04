@@ -29,9 +29,9 @@ const [count,setCount] = useState(0)
              setCount(90) //use the setCount //Do this
         },[]) //Empty array dependencies to prevent continued update of useEffect if component change
         useEffect(()=>{
-        },[count]) //useEffect update if "count" variable change
+        },[count]) //useEffect update if "count" variable change //Infinite loop
         useEffect(()=>{
-        }) //Continue update everytime changes detected
+        }) //Continue update everytime changes detected //Infinite loop
 ```
 2. Call Hook always on the top level of component/component function
 ```
