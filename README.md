@@ -12,6 +12,10 @@ ReactJs
 ```
 npx create-react-app my-app
 ```
+Eslint plugin react hook
+```
+npm install eslint-plugin-react-hooks --save-dev
+```
 ### React JS Hook Rules 
 ```
 https://reactjs.org/docs/hooks-rules.html
