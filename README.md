@@ -50,3 +50,6 @@ useEffect(function persistForm() {
     }
   });
 ```
+
+### References
+[React JS Hooks Rules](https://reactjs.org/docs/hooks-rules.html)
