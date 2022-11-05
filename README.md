@@ -53,3 +53,5 @@ useEffect(function persistForm() {
 [React JS Hooks Rules](https://reactjs.org/docs/hooks-rules.html)
 
 [ES6 FEATURES](http://es6-features.org/#Constants)
+
+[TYPESCRIPT](https://www.typescriptlang.org/)
