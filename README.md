@@ -1,7 +1,5 @@
 ### Tutorial
-```
-https://www.youtube.com/watch?v=b9eMGE7QtTk
-```
+[React JS Full Course 2022 | Build an App and Master React in 1 Hour](https://www.youtube.com/watch?v=b9eMGE7QtTk)
 ### Installation
 Node Js
 ```
@@ -53,3 +51,5 @@ useEffect(function persistForm() {
 
 ### References
 [React JS Hooks Rules](https://reactjs.org/docs/hooks-rules.html)
+
+[ES6 FEATURES](http://es6-features.org/#Constants)
