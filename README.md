@@ -46,7 +46,18 @@ useEffect(function persistForm() {
     }
   });
 ```
+4. Do not use useEffect() for fetching Data
+```
+Race condition           // 🔴
+No instant back button   // 🔴
+No initial HTML content  // 🔴
 
+// Best to use
+useQuery()         // 👍
+userSWR()          // 👍 
+use()              // 👍
+or Any framework   // 👍
+```
 ### References
 [React JS Hooks Rules](https://reactjs.org/docs/hooks-rules.html)
 
