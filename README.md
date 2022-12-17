@@ -59,6 +59,8 @@ use()              // 👍
 or Any framework   // 👍
 ```
 ### References
+[Goodbye useEffect](https://www.youtube.com/watch?v=bGzanfKVFeU&t=12s)
+
 [React JS Hooks Rules](https://reactjs.org/docs/hooks-rules.html)
 
 [ES6 FEATURES](http://es6-features.org/#Constants)
