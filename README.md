@@ -68,6 +68,8 @@ or Any framework   // 👍
 [TYPESCRIPT](https://www.typescriptlang.org/)
 
 ### Tutorial
+[React Node.Js MERN Ecommerce Tutorial](https://www.youtube.com/watch?v=y66RgYMAgSo)
+
 [React JS Full Course 2022 | Build an App and Master React in 1 Hour](https://www.youtube.com/watch?v=b9eMGE7QtTk)
 
 [INTERVIEW QUESTIONS](https://www.freecodecamp.org/news/react-interview-questions-and-answers/)
