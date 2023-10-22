@@ -1,23 +1,23 @@
 ### Installation
 Node Js
-```
-npm install -g n
-sudo n [version.number]
+```vim
+$npm install -g n
+$sudo n [version.number]
 ```
 ReactJs
-```
-npx create-react-app my-app
+```vim
+$npx create-react-app my-app
 ```
 Eslint plugin react hook
-```
-npm install eslint-plugin-react-hooks --save-dev
+```vim
+$npm install eslint-plugin-react-hooks --save-dev
 ```
 ### React JS Hook Rules 
-```
+```vim
 https://reactjs.org/docs/hooks-rules.html
 ```
 1. Do not modify the state directly or Manualy
-```
+```javascript
 const [count,setCount] = useState(0)
         //count = 90 Do not update state manually
         useEffect(()=>{
@@ -31,14 +31,14 @@ const [count,setCount] = useState(0)
         }) //Continue update everytime changes detected //Infinite loop
 ```
 2. Call Hook always on the top level of component/component function
-```
+```javascript
 useState('Mary')           // 1. Read the name state variable (argument is ignored)
 // useEffect(persistForm)  // 🔴 This Hook was skipped!
 useState('Poppins')        // 🔴 2 (but was 3). Fail to read the surname state variable
 useEffect(updateTitle)     // 🔴 3 (but was 4). Fail to replace the effect
 ```
 3. Put condition inside hook
-```
+```vim
 useEffect(function persistForm() {
     // 👍 We're not breaking the first rule anymore
     if (name !== '') {
@@ -47,7 +47,7 @@ useEffect(function persistForm() {
   });
 ```
 4. Do not use useEffect() for fetching Data
-```
+```vim
 Race condition           // 🔴
 No instant back button   // 🔴
 No initial HTML content  // 🔴
