@@ -85,6 +85,7 @@ const App = () => {
          </div>
     )
 }
+export default App
 ```
 2. Axios()
 ```javascript
@@ -114,23 +115,26 @@ const App = () => {
          </div>
     )
 }
+export default App
 ```
 3. Interval
-```
-const [number, setNumber] = useState(0)
-useEffect(()=>{
-     console.log('useEffect run')
-     const interval = setInterval(()=>{
-          setNumber((prev)=>prev + 1)
-     });
-     return()=>{
-          clearInterval(interval);
-     }
-},[1000])
-
-return(
-     <div><p>{number}</p></div>
-)
+```javascript
+const App = () => {
+     const [number, setNumber] = useState(0)
+     useEffect(()=>{
+          console.log('useEffect run')
+          const interval = setInterval(()=>{
+               setNumber((prev)=>prev + 1)
+          });
+          return()=>{
+               clearInterval(interval);
+          }
+     },[1000])
+     return(
+          <div><p>{number}</p></div>
+     )
+}
+export default App
 ```
 
 ### References
