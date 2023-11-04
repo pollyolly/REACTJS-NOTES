@@ -58,8 +58,8 @@ userSWR()          // 👍
 use()              // 👍
 or Any framework   // 👍
 ```
-### Use Effect
-1. Fetch useEffect clean up function
+### Use Effect CleanUp Function (Clean Memory)
+1. fetch()
 ```javascript
 const App = () => {
     const [user, setUser] = setState('')
@@ -71,8 +71,38 @@ const App = () => {
              .then((data)=>{
                 setUser(data);
              });
+         //CleanUp function
          return()=>{
               controller.abort();
+              console.log('cancelled');
+         }
+    },[id]);
+   
+    return(
+         <div>
+              <p>{user.username}</p>
+              <p>{user.email}</p>
+         </div>
+    )
+}
+```
+2. Axios()
+```javascript
+const App = () => {
+    const [user, setUser] = setState('')
+    useEffect(()=>{
+         const cancelToken = axios.cancelToken.source()
+         axios.get(`https://jsonplaceholder.typecode.com/users/${id}`, { cancelToken:cancelToken.token })
+             .then((res)=>{
+                setUser(res.data);
+             }).catch(err=>{
+                if(axios.isCancel(err)){
+                     console.log('cancelled');
+                }
+             });
+         //CleanUp function
+         return()=>{
+              cancelToken.cancel();
               console.log('cancelled');
          }
     },[id]);
