@@ -91,7 +91,7 @@ const App = () => {
 const App = () => {
     const [user, setUser] = setState('')
     useEffect(()=>{
-         const cancelToken = axios.cancelToken.source()
+         const cancelToken = axios.CancelToken.source()
          axios.get(`https://jsonplaceholder.typecode.com/users/${id}`, { cancelToken:cancelToken.token })
              .then((res)=>{
                 setUser(res.data);
