@@ -58,6 +58,34 @@ userSWR()          // 👍
 use()              // 👍
 or Any framework   // 👍
 ```
+### Use Effect
+1. Fetch useEffect clean up function
+```javascript
+const App = () => {
+    const [user, setUser] = setState('')
+    useEffect(()=>{
+         const controller = new AbortController();
+         const signal = controller.signal;
+         fetch(`https://jsonplaceholder.typecode.com/users/${id}`, { signal })
+             .then((res)=>res.json())
+             .then((data)=>{
+                setUser(data);
+             });
+         return()=>{
+              controller.abort();
+              console.log('cancelled');
+         }
+    },[id]);
+   
+    return(
+         <div>
+              <p>{user.username}</p>
+              <p>{user.email}</p>
+         </div>
+    )
+}
+```
+
 ### References
 [Goodbye useEffect](https://www.youtube.com/watch?v=bGzanfKVFeU&t=12s)
 
