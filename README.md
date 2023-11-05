@@ -126,6 +126,7 @@ const App = () => {
           const interval = setInterval(()=>{
                setNumber((prev)=>prev + 1)
           });
+          //CleanUp function
           return()=>{
                clearInterval(interval);
           }
