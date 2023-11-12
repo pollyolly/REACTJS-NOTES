@@ -137,6 +137,11 @@ const App = () => {
 }
 export default App
 ```
+### Caching
+```
+useMemo
+useCallback
+```
 
 ### References
 [Goodbye useEffect](https://www.youtube.com/watch?v=bGzanfKVFeU&t=12s)
