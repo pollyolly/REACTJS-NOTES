@@ -137,10 +137,46 @@ const App = () => {
 }
 export default App
 ```
-### Caching
+### ReactJs Caching
+#### ReactJs useMemo() hook
+memoizing value, to compute the value when necessary only
+```javascript
+const [a, setA] = useState(0);
+const [b, setB] = useState(0);
+const sum = useMemo(()=> {
+     console.log('Computing...')
+     return a + b;   
+},[a, b]);
+return (
+<>
+ <p>{ sum }</p>
+  <button onClick={()=> setA(a + 1) }>Increment A</button>
+  <button onClick={()=> setA(b + 1) }>Increment B</button>
+</>
+)
 ```
-useMemo
-useCallback
+#### ReactJs useCallback() hook
+memoizing the function, when passing function as prop so its reference remain the same
+```javascript
+function ChildComponent({ onClick }){
+  return(
+      <>
+         <button onClick={ onClick }>ClickMe</button>
+      </>
+  )
+}
+
+const [count, setCount] = useState(0);
+const incrementCount = useCallback(()=> {
+    setCount(prevCount => prevCount + 1);
+},[setCount]);
+return (
+<>
+ <p>{ count }</p>
+  <button onClick={ setCount }>Increment</button>
+  <ChildComponent onClick={ incrementCount } />
+</>
+)
 ```
 
 ### References
