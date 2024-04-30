@@ -184,32 +184,18 @@ return (
 
 [React JS Hooks Rules](https://reactjs.org/docs/hooks-rules.html)
 
-[ES6 FEATURES](http://es6-features.org/#Constants)
-
-[TYPESCRIPT](https://www.typescriptlang.org/)
-
 ### Tutorial
 [React Node.Js MERN Ecommerce Tutorial](https://www.youtube.com/watch?v=y66RgYMAgSo)
-
-[React JS Full Course 2022 | Build an App and Master React in 1 Hour](https://www.youtube.com/watch?v=b9eMGE7QtTk)
-
-[INTERVIEW QUESTIONS](https://www.freecodecamp.org/news/react-interview-questions-and-answers/)
-
-[WebRTC](https://www.youtube.com/watch?v=oxFr7we3LC8)
 
 ### UI FRAMEWORKS
 [NEXTUI](https://nextui.org/)
 
 [ONSEN](https://onsen.io/)
 
-[REACT SEMANTIC](https://react.semantic-ui.com/)
+[PRIME REACT](https://primereact.org/)
 
 [BLUEPRINT](https://blueprintjs.com/)
 
-[MUI](https://mui.com/)
-
-[GOMMET](https://v2.grommet.io/)
-
-[RSUITE](https://rsuitejs.com/components/table/)
+[RSUITE](https://rsuitejs.com/)
 
 [ASTRO website](https://astro.build/)
