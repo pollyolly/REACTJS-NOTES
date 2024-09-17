@@ -187,6 +187,8 @@ return (
 ### Tutorial
 [React Node.Js MERN Ecommerce Tutorial](https://www.youtube.com/watch?v=y66RgYMAgSo)
 
+[Framer Motion](https://www.freecodecamp.org/news/how-to-create-multi-page-animations-using-framer-motion-and-react-router-dom/)
+
 ### UI FRAMEWORKS
 [NEXTUI](https://nextui.org/)
 
