@@ -4,6 +4,13 @@ Node Js
 $npm install -g n
 $sudo n [version.number]
 ```
+Vite
+```vim
+$cd project-folder
+$npm create vite@latest .
+$npm install
+$npm run dev
+```
 ReactJs
 ```vim
 $npx create-react-app my-app
