@@ -144,6 +144,28 @@ const App = () => {
 }
 export default App
 ```
+### ReactJs use alternative to useEffect
+```javascript
+import { use } from "react";
+async function getPosts(){
+   const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+   return res.json();
+}
+
+const Page = () => {
+  const posts = use(getPosts());
+  return (
+      <ul>
+          {
+            posts.map((p: { id: string, title: string }) => (
+              <li key={p.id}>{p.title}</li>
+            ))
+          }
+      </ul>
+  );
+}
+export default Page;
+```
 ### ReactJs Caching
 #### ReactJs useMemo() hook
 memoizing value, to compute the value when necessary only
